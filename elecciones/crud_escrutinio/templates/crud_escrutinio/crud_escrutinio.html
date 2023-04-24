@@ -1,0 +1,70 @@
+{% extends "./base.html"%}
+
+{% block body%}
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <h2>Gestion Mesas</h2>
+        <div class="card">
+            <div class="card-body">
+                
+                <form action="{% url 'crearRegistro' %}" method="POST">{% csrf_token %}
+                    <div class="form-group">
+                        <input type="number" id="numRegistro" name="numRegistro" class="form-control" 
+                        placeholder="Numero de Registro" minlength="1" manlength="6" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="numMesa" name="numMesa" class="form-control" 
+                        placeholder="Mesa" minlength="1" manlength="6" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="numCandidato" name="numCandidato" class="form-control" 
+                        placeholder="ID Candidato" minlength="1" manlength="6" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="numVotos" name="numVotos" class="form-control" 
+                        placeholder="Votos">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block text-white">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div> </div>
+    <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8">
+        <form action="{% url 'buscar_mesa' %}" method="POST">{% csrf_token %}
+        <div class="form-group">
+            <input type="number" id="numSrcMesa" name="numSrcMesa" class="form-control" 
+                        placeholder="Ingrese nro de Mesa">
+            <button type="submit" class="btn btn-info btn-block text-white">Buscar mesa</button>
+        </div>
+        </form>
+        <h1>Listado Mesas</h1>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>id_registro</th>
+                        <th>mesa</th>
+                        <th>id_candidato</th>
+                        <th>votos</th>
+                        <th colspan="1">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for c in obj_mesas %}
+                    <tr>
+                        <td>{{c.id_registro_votos}}</td>
+                        <td>{{c.mesa.mesa}}</td>
+                        <td>{{c.id_cand.id_cand}}</td>
+                        <td>{{c.votos}}</td>
+                        <td><a href="{% url 'eliminarRegistro' c.id_registro_votos %}" class="btn btn-danger">Eliminar</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

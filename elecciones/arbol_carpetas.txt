@@ -1,0 +1,274 @@
+Folder PATH listing
+Volume serial number is D02B-2EE2
+C:.
+³   arbol_carpetas.txt
+³   arbol_de_carpetas.txt
+³   arbol_de_carpetas2.txt
+³   arbol_de_carpetas3.txt
+³   django.log
+³   manage.py
+³   
+ÃÄÄÄcrud_escrutinio
+³   ³   admin.py
+³   ³   apps.py
+³   ³   models.py
+³   ³   tests.py
+³   ³   urls.py
+³   ³   views.py
+³   ³   __init__.py
+³   ³   
+³   ÃÄÄÄmigrations
+³   ³   ³   __init__.py
+³   ³   ³   
+³   ³   ÀÄÄÄ__pycache__
+³   ³           __init__.cpython-39.pyc
+³   ³           
+³   ÃÄÄÄtemplates
+³   ³   ÀÄÄÄcrud_escrutinio
+³   ³           crud_escrutinio.html
+³   ³           
+³   ÀÄÄÄ__pycache__
+³           admin.cpython-39.pyc
+³           apps.cpython-39.pyc
+³           models.cpython-39.pyc
+³           views.cpython-39.pyc
+³           __init__.cpython-39.pyc
+³           
+ÃÄÄÄelecciones
+³   ³   asgi.py
+³   ³   forms.py
+³   ³   models.py
+³   ³   settings.py
+³   ³   urls.py
+³   ³   views.py
+³   ³   wsgi.py
+³   ³   __init__.py
+³   ³   
+³   ÃÄÄÄmigrations
+³   ³   ³   0001_initial.py
+³   ³   ³   0002_alter_candidatos_options_alter_escrutinio_options_and_more.py
+³   ³   ³   __init__.py
+³   ³   ³   
+³   ³   ÀÄÄÄ__pycache__
+³   ³           0001_initial.cpython-310.pyc
+³   ³           0001_initial.cpython-39.pyc
+³   ³           0002_alter_candidatos_options_alter_escrutinio_options_and_more.cpython-310.pyc
+³   ³           0002_alter_candidatos_options_alter_escrutinio_options_and_more.cpython-39.pyc
+³   ³           __init__.cpython-310.pyc
+³   ³           __init__.cpython-39.pyc
+³   ³           
+³   ÃÄÄÄstatic
+³   ³       script.js
+³   ³       
+³   ÃÄÄÄtemplates
+³   ³   ÀÄÄÄelecciones
+³   ³           carga_datos.html
+³   ³           style.css
+³   ³           
+³   ÀÄÄÄ__pycache__
+³           forms.cpython-39.pyc
+³           models.cpython-310.pyc
+³           models.cpython-39.pyc
+³           settings.cpython-310.pyc
+³           settings.cpython-39.pyc
+³           urls.cpython-310.pyc
+³           urls.cpython-39.pyc
+³           views.cpython-310.pyc
+³           views.cpython-39.pyc
+³           wsgi.cpython-310.pyc
+³           wsgi.cpython-39.pyc
+³           __init__.cpython-310.pyc
+³           __init__.cpython-39.pyc
+³           
+ÃÄÄÄlogin
+³   ³   admin.py
+³   ³   apps.py
+³   ³   models.py
+³   ³   tests.py
+³   ³   urls.py
+³   ³   views.py
+³   ³   __init__.py
+³   ³   
+³   ÃÄÄÄmigrations
+³   ³   ³   __init__.py
+³   ³   ³   
+³   ³   ÀÄÄÄ__pycache__
+³   ³           __init__.cpython-310.pyc
+³   ³           __init__.cpython-39.pyc
+³   ³           
+³   ÃÄÄÄtemplates
+³   ³   ³   base.html
+³   ³   ³   
+³   ³   ÃÄÄÄlogin
+³   ³   ³       home.html
+³   ³   ³       login.html
+³   ³   ³       
+³   ³   ÀÄÄÄregistration
+³   ³           logged_out.html
+³   ³           login.html
+³   ³           
+³   ÀÄÄÄ__pycache__
+³           admin.cpython-310.pyc
+³           admin.cpython-39.pyc
+³           apps.cpython-310.pyc
+³           apps.cpython-39.pyc
+³           models.cpython-310.pyc
+³           models.cpython-39.pyc
+³           urls.cpython-310.pyc
+³           urls.cpython-39.pyc
+³           views.cpython-310.pyc
+³           views.cpython-39.pyc
+³           __init__.cpython-310.pyc
+³           __init__.cpython-39.pyc
+³           
+ÀÄÄÄstaticfiles
+    ³   script.js
+    ³   
+    ÀÄÄÄadmin
+        ÃÄÄÄcss
+        ³   ³   autocomplete.css
+        ³   ³   base.css
+        ³   ³   changelists.css
+        ³   ³   dark_mode.css
+        ³   ³   dashboard.css
+        ³   ³   forms.css
+        ³   ³   login.css
+        ³   ³   nav_sidebar.css
+        ³   ³   responsive.css
+        ³   ³   responsive_rtl.css
+        ³   ³   rtl.css
+        ³   ³   widgets.css
+        ³   ³   
+        ³   ÀÄÄÄvendor
+        ³       ÀÄÄÄselect2
+        ³               LICENSE-SELECT2.md
+        ³               select2.css
+        ³               select2.min.css
+        ³               
+        ÃÄÄÄimg
+        ³   ³   calendar-icons.svg
+        ³   ³   icon-addlink.svg
+        ³   ³   icon-alert.svg
+        ³   ³   icon-calendar.svg
+        ³   ³   icon-changelink.svg
+        ³   ³   icon-clock.svg
+        ³   ³   icon-deletelink.svg
+        ³   ³   icon-no.svg
+        ³   ³   icon-unknown-alt.svg
+        ³   ³   icon-unknown.svg
+        ³   ³   icon-viewlink.svg
+        ³   ³   icon-yes.svg
+        ³   ³   inline-delete.svg
+        ³   ³   LICENSE
+        ³   ³   README.txt
+        ³   ³   search.svg
+        ³   ³   selector-icons.svg
+        ³   ³   sorting-icons.svg
+        ³   ³   tooltag-add.svg
+        ³   ³   tooltag-arrowright.svg
+        ³   ³   
+        ³   ÀÄÄÄgis
+        ³           move_vertex_off.svg
+        ³           move_vertex_on.svg
+        ³           
+        ÀÄÄÄjs
+            ³   actions.js
+            ³   autocomplete.js
+            ³   calendar.js
+            ³   cancel.js
+            ³   change_form.js
+            ³   collapse.js
+            ³   core.js
+            ³   filters.js
+            ³   inlines.js
+            ³   jquery.init.js
+            ³   nav_sidebar.js
+            ³   popup_response.js
+            ³   prepopulate.js
+            ³   prepopulate_init.js
+            ³   SelectBox.js
+            ³   SelectFilter2.js
+            ³   theme.js
+            ³   urlify.js
+            ³   
+            ÃÄÄÄadmin
+            ³       DateTimeShortcuts.js
+            ³       RelatedObjectLookups.js
+            ³       
+            ÀÄÄÄvendor
+                ÃÄÄÄjquery
+                ³       jquery.js
+                ³       jquery.min.js
+                ³       LICENSE.txt
+                ³       
+                ÃÄÄÄselect2
+                ³   ³   LICENSE.md
+                ³   ³   select2.full.js
+                ³   ³   select2.full.min.js
+                ³   ³   
+                ³   ÀÄÄÄi18n
+                ³           af.js
+                ³           ar.js
+                ³           az.js
+                ³           bg.js
+                ³           bn.js
+                ³           bs.js
+                ³           ca.js
+                ³           cs.js
+                ³           da.js
+                ³           de.js
+                ³           dsb.js
+                ³           el.js
+                ³           en.js
+                ³           es.js
+                ³           et.js
+                ³           eu.js
+                ³           fa.js
+                ³           fi.js
+                ³           fr.js
+                ³           gl.js
+                ³           he.js
+                ³           hi.js
+                ³           hr.js
+                ³           hsb.js
+                ³           hu.js
+                ³           hy.js
+                ³           id.js
+                ³           is.js
+                ³           it.js
+                ³           ja.js
+                ³           ka.js
+                ³           km.js
+                ³           ko.js
+                ³           lt.js
+                ³           lv.js
+                ³           mk.js
+                ³           ms.js
+                ³           nb.js
+                ³           ne.js
+                ³           nl.js
+                ³           pl.js
+                ³           ps.js
+                ³           pt-BR.js
+                ³           pt.js
+                ³           ro.js
+                ³           ru.js
+                ³           sk.js
+                ³           sl.js
+                ³           sq.js
+                ³           sr-Cyrl.js
+                ³           sr.js
+                ³           sv.js
+                ³           th.js
+                ³           tk.js
+                ³           tr.js
+                ³           uk.js
+                ³           vi.js
+                ³           zh-CN.js
+                ³           zh-TW.js
+                ³           
+                ÀÄÄÄxregexp
+                        LICENSE.txt
+                        xregexp.js
+                        xregexp.min.js
+                        

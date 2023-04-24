@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Carga de votos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<style>
+		.container {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+	</style>
+	{% load static %}
+	
+</head>
+<body>
+	<form method="POST" action="{% url 'carga_datos' %}">
+		{% csrf_token %}
+
+	<div class="container">
+		<h1 class="text-center">Carga de votos</h1>
+		<label for="circuito">Circuito Electoral:</label>
+		<select id="circuito" name="circuito">
+			<option value="">Seleccione un circuito</option>
+			<option value="107">107</option>
+			<option value="107A">107A</option>
+			<option value="107B">107B</option>
+			<option value="107C">107C</option>
+			<option value="108">108</option>
+			<option value="109">109</option>
+			<option value="110">110</option>
+			<option value="111">111</option>
+			<option value="112">112</option>
+			<option value="113">113</option>
+			<option value="114">114</option>
+			<option value="115">115</option>
+			<option value="116">116</option>
+			<option value="117">117</option>
+			<option value="117A">117A</option>
+			<option value="118">118</option>
+			<option value="119">119</option>
+			<option value="120">120</option>
+			<option value="121">121</option>
+			<option value="122">122</option>
+			<option value="123">123</option>
+			<option value="124">124</option>
+		</select>
+
+		<label for="mesa">Nro. de mesa:</label>
+		<select id="mesa" name="mesa"></select>
+	</div>
+
+	<!--<script src="script.js"></script>-->
+		<div class="table-responsive">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Candidato</th>
+						<th>Votos</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="text-center">Cambia Mendoza 501A</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Mondotte Francisco</td>
+						<td><input type="number" class="form-control" name="votos_1" id="votos_1"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 501A</td>
+						<td><input type="number" class="form-control" name="votos_2" id="votos_2" value= "0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Cambia Mendoza 501B</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Freidemberg Abel</td>
+						<td><input type="number" class="form-control" name="votos_3" id="votos_3" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 501B</td>
+						<td><input type="number" class="form-control" name="votos_4" id="votos_4" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Cambia Mendoza 501C</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Andion Alfredo</td>
+						<td><input type="number" class="form-control" name="votos_5" id="votos_5"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 501C</td>
+						<td><input type="number" class="form-control" name="votos_6" id="votos_6"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Cambia Mendoza 501D</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 501D</td>
+						<td><input type="number" class="form-control"name="votos_7" id="votos_7"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Frente Libertario Democrata y Jubilados 503A</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Baldovin Juan</td>
+						<td><input type="number" class="form-control" name="votos_8" id="votos_8"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 503A</td>
+						<td><input type="number" class="form-control" name="votos_9" id="votos_9"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Frente Libertario Democrata y Jubilados 503B</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Bianchi Rodolfo</td>
+						<td><input type="number" class="form-control" name="votos_10" id="votos_10"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 503B</td>
+						<td><input type="number" class="form-control" name="votos_11" id="votos_11"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Frente de Izquierda 502A</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Benegas Maria</td>
+						<td><input type="number" class="form-control" name="votos_12" id="votos_12"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 502A</td>
+						<td><input type="number" class="form-control" name="votos_13" id="votos_13" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Frente de Izquierda 502B</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Bautista Franco</td>
+						<td><input type="number" class="form-control" name="votos_14" id="votos_14"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 502B</td>
+						<td><input type="number" class="form-control" name="votos_15" id="votos_15"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Elegi San Rafael Avanza 506A</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Sorroche Miguel</td>
+						<td><input type="number" class="form-control" name="votos_16" id="votos_16"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 506A</td>
+						<td><input type="number" class="form-control" name="votos_17" id="votos_17"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Elegi San Rafael Avanza 506B</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Yasuff Nadir</td>
+						<td><input type="number" class="form-control" name="votos_18" id="votos_18"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 506B</td>
+						<td><input type="number" class="form-control" name="votos_19" id="votos_19"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Elegi San Rafael Avanza 506C</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Felix Omar</td>
+						<td><input type="number" class="form-control" name="votos_20" id="votos_20"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 506C</td>
+						<td><input type="number" class="form-control" name="votos_21" id="votos_21"  value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Partido Verde 181</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Carrieri Sandra</td>
+						<td><input type="number" class="form-control" name="votos_22" id="votos_22" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 181</td>
+						<td><input type="number" class="form-control" name="votos_23" id="votos_23" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+                    <!---->
+                    <tr>
+						<td class="text-center">Partido Valle Grande 327</td>
+					</tr>
+					<tr>
+						<td id="id_cand">Sanchez Alberto</td>
+						<td><input type="number" class="form-control" name="votos_24" id="votos_24" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Consejales 327</td>
+						<td><input type="number" class="form-control" name="votos_25" id="votos_25" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<!---->
+					<tr>
+						<td id="id_cand">Votos en Blanco</td>
+						<td><input type="number" class="form-control" name="votos_26" id="votos_26" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Votos Nulos</td>
+						<td><input type="number" class="form-control" name="votos_27" id="votos_27" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Identidad Impugnada</td>
+						<td><input type="number" class="form-control" name="votos_28" id="votos_28" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+					<tr>
+						<td id="id_cand">Votos Recurridos</td>
+						<td><input type="number" class="form-control" name="votos_29" id="votos_29" value="0" placeholder="Ingrese la cantidad de votos"></td>
+					</tr>
+				
+				</tbody>
+			</table>
+		</div>
+		
+		<button type="submit" class="btn btn-primary btn-block">Cargar votos</button>
+	</div>
+	</form>
+	<script src="{% static 'script.js' %}"></script>
+</body>
+</html>
