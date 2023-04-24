@@ -23,7 +23,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', include('login.urls')),
-    path('carga_datos/', views.carga_datos, name='carga_datos'),
+    path('', views.carga_datos, name='carga_datos'),
     path('crud_escrutinio/', include('crud_escrutinio.urls')),
     #path('crearRegistro/', views.crearRegistro),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
